@@ -4,6 +4,10 @@ local ohString2 = "tripleEgg"
 
 workspace.__THINGS.__REMOTES.buyEgg:InvokeServer(ohString1, ohString2)
 
+local ohInstance1 = game:GetService("Players").LocalPlayer.PlayerGui
+
+workspace.__THINGS.__REMOTES.confirmSellPetToMerchant:InvokeServer(ohInstance1)
+
 local ohString1 = "Tikicorn"
 
 workspace.__THINGS.__REMOTES.selectSearched:FireServer(ohString1)
@@ -27,8 +31,4 @@ workspace.__THINGS.__REMOTES.selectSearched:FireServer(ohString1)
 local ohInstance1 = game:GetService("Players").LocalPlayer
 
 workspace.__THINGS.__REMOTES.rebirth:InvokeServer(ohInstance1)
-
-local ohInstance1 = game:GetService("Players").LocalPlayer.PlayerGui
-
-workspace.__THINGS.__REMOTES.confirmSellPetToMerchant:InvokeServer(ohInstance1)
 end
